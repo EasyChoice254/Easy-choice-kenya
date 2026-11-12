@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Easy Choice Kenya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>EASY CHOICE KENYA</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="services">
+
+    <h2>Create Your Account</h2>
+
+    <div class="card" style="margin:auto; max-width:400px;">
+
+        <form id="registerForm">
+
+            <input type="text"
+                id="fullname"
+                placeholder="Full Name"
+                required>
+
+            <br><br>
+
+            <input type="email"
+                id="email"
+                placeholder="Email Address"
+                required>
+
+            <br><br>
+
+            <input type="password"
+                id="password"
+                placeholder="Create Password"
+                minlength="8"
+                required>
+
+            <br><br>
+
+            <button type="submit" class="button">
+                Register
+            </button>
+
+        </form>
+
+        <p id="message" style="margin-top:20px;"></p>
+
+        <p style="margin-top:20px;">
+            Already registered?
+            <a href="login.html">Login here</a>
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>Easy Choice Kenya</p>
+</footer>
+
+<script>
+document.getElementById("registerForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("message").textContent =
+    "Registration form received for demonstration. Account creation is not yet connected.";
+
+});
+</script>
+
+</body>
+</html>
